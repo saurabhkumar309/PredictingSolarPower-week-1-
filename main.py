@@ -235,7 +235,7 @@ def main():
     st.sidebar.markdown('<div class="sidebar-header">⚙️ Configuration Panel</div>', unsafe_allow_html=True)
     
     # File upload or path input
-    upload_option = st.sidebar.radio("Data Input Method:", ["File Upload", "File Path"])
+    upload_option = st.sidebar.radio("Data Input Method:", ["File Path", "File Upload"])
     
     if upload_option == "File Upload":
         uploaded_file = st.sidebar.file_uploader("Upload CSV file", type=['csv'])
